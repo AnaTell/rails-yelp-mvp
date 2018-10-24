@@ -4,7 +4,7 @@
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :phone_number %>
-  <%= f.input :category, collection: %w[Chinese Italian Japanese French Belgian] %>
+  <%= f.input :category, collection: %w[chinese italian japanese french belgian] %>
   <%= f.submit "Add your restaurant", class: "btn btn-primary" %>
   <%= link_to 'Go Back', restaurants_path, class: "btn btn-primary" %>
 <% end %>

@@ -1,0 +1,11 @@
+<h1><%= @restaurant.name.capitalize %></h1>
+<p><%= @restaurant.category.capitalize %></p>
+<p>Planet <%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<%= link_to 'Go Back', restaurants_path, class: "btn btn-primary" %>
+
+<% @reviews.each do |review| %>
+<h2><%= review.rating %></h2>
+<p><%= review.content %></p>
+<% end %>
+<%= link_to 'Create New Review', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
